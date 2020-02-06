@@ -40,7 +40,7 @@ class ImageInput {
      * validate the file input
      */
     validate() {
-        if (this.inputs.prop('required') !== null && Is.empty(this.fileInput.files) && this.imageSrc == this.defaultImagePreview) {
+        if (this.prop('required') !== null && Is.empty(this.fileInput.files) && this.imageSrc == this.defaultImagePreview) {
             this._formHandler.addError(this.prop('name'), 'required', trans('validation.required'));
             this.error = trans('validation.required');            
         } else {

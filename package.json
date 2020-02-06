@@ -1,6 +1,6 @@
 {
   "name": "@flk/image-input",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Image input handler for Falak framework",
   "keywords": [
     "image",
