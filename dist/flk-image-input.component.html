@@ -1,0 +1,8 @@
+<label *if="this.imageLabel" for="{{ this.id }}" [html]="this.imageLabel"></label>
+<span class="image-holder">
+    <input type="file" class="d-none" (input)="this.validate()" (ready)="this.fileInput = $el" accept="image/*" [name]="this.getName()" />
+    <button *primary type="button" class="img-preview" (click)="this.selectImage()" >
+        <img [src]="this.imageSrc" [title]="this.getImageTitle()" />
+    </button>
+</span>
+<span *if="this.error" class="{{ this.errorClasses }}" [html]="this.error"></span>
