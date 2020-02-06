@@ -64,6 +64,12 @@ Set the input name.
 
 If set to true, the user **MUST** select a value.
 
+## Title
+
+**name**: `title` | `[title]`
+
+Set the title of the input.
+
 # Events
 
 **name**: `change`
